@@ -1,0 +1,23 @@
+<div class="jumbotron">
+	<h1>Home Page</h1>
+	
+	<p>{{ message }}</p>
+
+       <multiselect class="input-xlarge" multiple="true"
+        labeltext="Pleas select site"
+        labelname="site"
+        ng-model="selectedCar"
+        options="c.name for c in cars"
+        change="selected()" >
+        </multiselect>
+        <div class="well well-small">
+            {{selectedCar}}
+        </div>
+
+</div>
+
+
+
+
+
+ 
